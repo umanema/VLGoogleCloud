@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha38.2.dtd" >
-   <PATCH nodename="D:\GODA\VVVVProjects\GooglePointcloud\patches\subpatches\ComputePointcloud.v4p" systemname="ComputePointcloud" filename="D:\GODA\VVVVProjects\GooglePointcloud\patches\subpatches\ComputePointcloud.v4p">
+   <PATCH nodename="D:\GODA\VVVVProjects\GooglePointcloud\patches\subpatches\ComputePointcloud.v4p" systemname="ComputePointcloud" filename="D:\GODA\VVVVProjects\GooglePointcloud\patches\subpatches\ComputePointcloud.v4p" scrollx="135" scrolly="975">
    <NODE systemname="Group (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Group (DX11.Layer)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="2340" top="11190" width="100" height="100">
    </BOUNDS>
@@ -271,7 +271,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="9885" top="5760" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -281,7 +281,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Enabled">
    </PIN>
@@ -333,7 +333,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="12405" top="5730" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -343,7 +343,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Enabled">
    </PIN>
@@ -482,24 +482,6 @@
    <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
-   <NODE systemname="Add (Value Spectral)" nodename="Add (Value Spectral)" componentmode="Hidden" id="37">
-   <BOUNDS type="Node" left="5220" top="4890" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="2" values="0,0">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="EQ (Value)" nodename="EQ (Value)" componentmode="Hidden" id="38">
-   <BOUNDS type="Node" left="5205" top="5430" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 1" visible="1">
-   </PIN>
-   <PIN pinname="Input 2" slicecount="1" values="2">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
    <NODE systemname="Count (Value)" nodename="Count (Value)" componentmode="Hidden" id="39">
    <BOUNDS type="Node" left="2805" top="5745" width="100" height="100">
    </BOUNDS>
@@ -570,8 +552,6 @@
    </LINK>
    <LINK srcnodeid="4" srcpinname="Geometry Out" dstnodeid="26" dstpinname="Geometry">
    </LINK>
-   <LINK srcnodeid="38" srcpinname="Output" dstnodeid="26" dstpinname="Reset">
-   </LINK>
    <LINK srcnodeid="15" srcpinname="XY" dstnodeid="26" dstpinname="SizeXY">
    </LINK>
    <NODE id="42" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
@@ -598,8 +578,6 @@
    </LINK>
    <LINK srcnodeid="22" srcpinname="Buffer" dstnodeid="26" dstpinname="NextDepth">
    </LINK>
-   <LINK srcnodeid="37" srcpinname="Output" dstnodeid="38" dstpinname="Input 1">
-   </LINK>
    <NODE id="44" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Input">
    </PIN>
@@ -607,9 +585,9 @@
    </BOUNDS>
    <BOUNDS type="Node" left="11115" top="500" width="750" height="240">
    </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="44" srcpinname="Y Output Value" dstnodeid="37" dstpinname="Input">
-   </LINK>
    <LINK srcnodeid="41" srcpinname="Y Output Value" dstnodeid="2" dstpinname="Data">
    </LINK>
    <NODE id="45" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
@@ -668,10 +646,22 @@
    </LINK>
    <LINK srcnodeid="23" srcpinname="Change" dstnodeid="30" dstpinname="Input">
    </LINK>
-   <BOUNDS type="Window" left="-1" top="-1" width="13905" height="12790">
+   <BOUNDS type="Window" left="4395" top="8490" width="13905" height="12780">
    </BOUNDS>
    <PACK Name="dx11" Version="1.3.1">
    </PACK>
    <PACK Name="addonpack" Version="38.1.0">
    </PACK>
+   <NODE systemname="OR (Boolean Spectral)" nodename="OR (Boolean Spectral)" componentmode="Hidden" id="46">
+   <BOUNDS type="Node" left="9810" top="3540" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="44" srcpinname="Y Output Value" dstnodeid="46" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="46" srcpinname="Output" dstnodeid="26" dstpinname="Reset">
+   </LINK>
    </PATCH>

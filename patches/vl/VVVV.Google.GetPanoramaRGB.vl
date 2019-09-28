@@ -21,6 +21,7 @@
             <Pin Id="BWjqAmqUeSzPy0yNKfMFg0" Name="Refresh" Kind="InputPin" />
             <Pin Id="BoRrL0wqHsUP5xzVhR487J" Name="Address" Kind="InputPin" />
             <Pin Id="AQyuaj1RvPBOEdFLCTowJA" Name="pano_id" Kind="OutputPin" />
+            <Pin Id="Tx2A6HUzmrAQYpruppOFl0" Name="On Completed" Kind="OutputPin" />
           </Patch>
           <Canvas Id="C4yd3S6BFv9NWqJ2WO3OFi" CanvasType="Group">
             <Node Bounds="144,225,125,19" Id="Pay1PJqtCL8P1vgyFCL6TS">
@@ -188,7 +189,7 @@
               <Pin Id="EMhroTkpFdTQQe8Bef3Ny6" Name="Input" Kind="StateInputPin" />
               <Pin Id="FUJgapzqM1EOEJWnknVLaX" Name="Result" Kind="OutputPin" />
             </Node>
-            <Pad Id="IX96xsQ7VMfNnxK5qURB6o" Comment="Pattern" Bounds="305,881,35,15" ShowValueBox="true" isIOBox="true" Value="\[(.|\n)*?\]">
+            <Pad Id="IX96xsQ7VMfNnxK5qURB6o" Comment="Pattern" Bounds="305,881,122,15" ShowValueBox="true" isIOBox="true" Value="\[(.|\n)*?\]">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
@@ -367,6 +368,7 @@
             <ControlPoint Id="PCVkSmLZw5KPMztLrEi2BQ" Bounds="465,301" />
             <ControlPoint Id="Riy9sNvTgfVOu0zycypgq6" Bounds="905,354" />
             <ControlPoint Id="D5yOAXkcRrSNBzemdxWWYE" Bounds="326,1643" />
+            <ControlPoint Id="Dw5NK3x0guVMzOL4WyfdxD" Bounds="543,268" />
           </Canvas>
           <ProcessDefinition Id="FHNLl8GWgcVOJzRkkPI83E">
             <Fragment Id="MRFnVwHDf0WOO7H3jKbCxI" Patch="ESJZDDS0I02LAWDOx9RJVV" Enabled="true" />
@@ -419,6 +421,8 @@
           <Link Id="DUjUhnnV5uSNuA6gJdFNj5" Ids="NnNOZHTorJaOOleZTL4QGa,V5SlZeBPSvDMzUTe1NcIFz" />
           <Link Id="PMbj0MroCgPO2MmdmKW1pi" Ids="D5yOAXkcRrSNBzemdxWWYE,AQyuaj1RvPBOEdFLCTowJA" IsHidden="true" />
           <Link Id="DflCephiQ4ROwLmUIRgqYo" Ids="FUJgapzqM1EOEJWnknVLaX,D5yOAXkcRrSNBzemdxWWYE" />
+          <Link Id="AseNP4t62ZiNcYAs8Hr6EL" Ids="Dw5NK3x0guVMzOL4WyfdxD,Tx2A6HUzmrAQYpruppOFl0" IsHidden="true" />
+          <Link Id="NkqbdVs4x3TNwaRRYErXY3" Ids="AnpG6EfVeGYPjcuXtQympd,Dw5NK3x0guVMzOL4WyfdxD" />
         </Patch>
       </Node>
     </Canvas>
