@@ -133,7 +133,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="14340" top="1500" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="D:\GODA\VVVVProjects\GooglePointcloud\patches\temp_rgb">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="D:\GODA\VVVVProjects\GooglePointcloud\temp_rgb\">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>

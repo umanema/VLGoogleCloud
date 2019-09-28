@@ -87,9 +87,9 @@
    </BOUNDS>
    </NODE>
    <NODE systemname="Grid (DX11.Geometry)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Grid (DX11.Geometry)" componentmode="Hidden" id="115">
-   <BOUNDS type="Node" left="690" top="5295" width="100" height="100">
+   <BOUNDS type="Node" left="660" top="5295" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="690" top="5295" width="3000" height="3000">
+   <BOUNDS type="Box" left="660" top="5295" width="3000" height="3000">
    </BOUNDS>
    <PIN pinname="Geometry Out" visible="1">
    </PIN>
@@ -335,9 +335,9 @@
    <LINK srcnodeid="27" srcpinname="Texture Out" dstnodeid="286" dstpinname="Texture">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="288">
-   <BOUNDS type="Box" left="5820" top="10470" width="480" height="480">
+   <BOUNDS type="Box" left="5820" top="10080" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="5820" top="10470" width="0" height="0">
+   <BOUNDS type="Node" left="5820" top="10080" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -449,7 +449,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="1230" top="7590" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="depth\isaaciy_depth.png">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="..\depth\isaaciy_depth.png">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="render">
    </PIN>
@@ -462,7 +462,7 @@
    </NODE>
    <LINK srcnodeid="300" srcpinname="Output String" dstnodeid="295" dstpinname="Filename">
    </LINK>
-   <NODE systemname="GetData" filename="subpatches\GetData.v4p" nodename="subpatches\GetData.v4p" componentmode="Hidden" id="307">
+   <NODE systemname="GetData" filename="subpatches\GetData.v4p" nodename="subpatches\GetData.v4p" componentmode="InAWindow" id="307">
    <BOUNDS type="Node" left="1586" top="2688" width="3750" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="0" top="210" width="18310" height="7000">
@@ -486,7 +486,7 @@
    </LINK>
    <LINK srcnodeid="307" srcpinname="RGB_2" dstnodeid="246" dstpinname="Texture">
    </LINK>
-   <NODE id="311" componentmode="Hidden" systemname="ComputePointcloud" filename="subpatches\ComputePointcloud.v4p" nodename="subpatches\ComputePointcloud.v4p" hiddenwhenlocked="0" managers="">
+   <NODE id="311" componentmode="InAWindow" systemname="ComputePointcloud" filename="subpatches\ComputePointcloud.v4p" nodename="subpatches\ComputePointcloud.v4p" hiddenwhenlocked="0" managers="">
    <BOUNDS type="Node" left="3815" top="5758" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="0" top="0" width="13905" height="12790">
