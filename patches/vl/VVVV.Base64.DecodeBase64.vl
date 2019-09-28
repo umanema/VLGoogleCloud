@@ -20,6 +20,7 @@
             <Pin Id="LSaNeuMzu2NMCHk5NpMiZy" Name="URL" Kind="InputPin" />
             <Pin Id="Kdj7Mp7cRLnM0yKv8N6JW0" Name="Refresh" Kind="InputPin" />
             <Pin Id="KtFAmoEpjRkPd78mmZSVIo" Name="Output" Kind="OutputPin" />
+            <Pin Id="JLIbOVPuFzAMEOMm4qLKcP" Name="On Completed" Kind="OutputPin" />
           </Patch>
           <Canvas Id="C4yd3S6BFv9NWqJ2WO3OFi" CanvasType="Group">
             <Overlay Id="TeMgYJCYlalNBqeGhD0g1M" Name="Number of planes" Bounds="349,991,405,456">
@@ -37,7 +38,7 @@
             <Overlay Id="EmkZrOpr6beMk9H9UBsOP7" Name="Depth Map Indices" Bounds="200,1538,317,269">
               <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
             </Overlay>
-            <ControlPoint Id="QvbH1YmonTsPvxpouA9hIK" Bounds="583,3709" />
+            <ControlPoint Id="QvbH1YmonTsPvxpouA9hIK" Bounds="579,4026" />
             <Node Bounds="368,-649,125,19" Id="TUL2r1y7iqmMDVo5hgVarT">
               <p:NodeReference LastCategoryFullName="IO.HTTP" LastSymbolSource="VL.HTTP.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -1371,7 +1372,7 @@
               <ControlPoint Id="QqPqkc6dj3yLy3ilo6xfyr" Bounds="580,3596" Alignment="Bottom" />
               <ControlPoint Id="LfLAKdYMkLQOYxYPTL7bP1" Bounds="580,-26" Alignment="Top" />
             </Node>
-            <Node Bounds="329,-210,48,19" Id="GyFBxveRoSWOg3adXTgNH2">
+            <Node Bounds="150,-149,48,26" Id="GyFBxveRoSWOg3adXTgNH2">
               <p:NodeReference LastCategoryFullName="Primitive.String" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="StringType" Name="String" />
@@ -1380,7 +1381,7 @@
               <Pin Id="TutF8gJDVITLsEOTPrdl9Q" Name="Input" Kind="InputPin" />
               <Pin Id="QaTYMlt6U8XNVMZn6v2hGX" Name="Length" Kind="OutputPin" />
             </Node>
-            <Node Bounds="359,-118" Id="KSu7vMUtx1RNFObe94mzeU">
+            <Node Bounds="151,-85,25,19" Id="KSu7vMUtx1RNFObe94mzeU">
               <p:NodeReference LastCategoryFullName="Math" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="&gt;" />
@@ -1403,6 +1404,8 @@
                 <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
             </Pad>
+            <Pad Id="R1RvUxv1VJgOQsaZjIlEO1" Comment="" Bounds="298,-421,35,35" ShowValueBox="true" isIOBox="true" />
+            <ControlPoint Id="FD9xbrK9uxSPZOVHfzDhWD" Bounds="781,-586" />
           </Canvas>
           <ProcessDefinition Id="FHNLl8GWgcVOJzRkkPI83E">
             <Fragment Id="MRFnVwHDf0WOO7H3jKbCxI" Patch="ESJZDDS0I02LAWDOx9RJVV" Enabled="true" />
@@ -1604,6 +1607,9 @@
           <Link Id="Gp11WKKAC1FNl0QW7m4vdz" Ids="FRWTpWbGJTGPluqQPlCU64,AP4WWBWGFjpNbC6ZCS0A6u" />
           <Link Id="LNSzFKoG5z1NtCOb5aIbgz" Ids="HOIDZjl5KZvPu0OY4eJ9mF,OwpDxIRiaEsQXr9XfglNjH" />
           <Link Id="JkZEkmKOWe1OXQ6Fu2hV12" Ids="HqDH3OXTRn5MR0ve0mmGq5,BZLY3jcfm74NoiqPpwdIPZ" />
+          <Link Id="EcM0DRmsOWiNjVrjsG3tyJ" Ids="HqDH3OXTRn5MR0ve0mmGq5,R1RvUxv1VJgOQsaZjIlEO1" />
+          <Link Id="M1hWHhnXuJHN78kMLFmllo" Ids="FD9xbrK9uxSPZOVHfzDhWD,JLIbOVPuFzAMEOMm4qLKcP" IsHidden="true" />
+          <Link Id="IY9oqmuzn8cQTrJV0qXorj" Ids="O4uaiLlII5wMEOyPTYGlpm,FD9xbrK9uxSPZOVHfzDhWD" />
         </Patch>
       </Node>
     </Canvas>
