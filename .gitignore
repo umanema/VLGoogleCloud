@@ -1,0 +1,9 @@
+# .v4p backup files
+*~.xml
+
+# Dynamic plugins .dll
+bin/
+
+/temp_rgb
+/rgb
+/depth
